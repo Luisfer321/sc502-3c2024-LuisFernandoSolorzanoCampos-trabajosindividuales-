@@ -1,0 +1,215 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #007BFF;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de Bienvenida */
+.bienvenida {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.bienvenida h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.bienvenida p {
+  font-size: 1.2em;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+
+
+
+/* Sección de Servicios */
+.servicios {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.servicios h2 {
+  text-align: center;
+}
+
+.servicios ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.servicios ul li {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Sección de Perfil del Doctor */
+.perfil-doctor {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.perfil-doctor h1 {
+  text-align: center;
+}
+
+.perfil-doctor p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.perfil-doctor #descripcion-doctor {
+  margin: 20px 0;
+}
+
+.perfil-doctor #agendar-cita {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #28A745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+
+.perfil-doctor #agendar-cita:hover {
+  background-color: #218838;
+}
+
+/* Sección de Comentarios */
+.comentarios {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.comentarios {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.comentarios h2 {
+  text-align: center;
+}
+
+.comentarios .tarjetas {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.comentarios .tarjeta {
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 30%;
+  box-sizing: border-box;
+}
+
+.comentarios .tarjeta p {
+  margin: 5px 0;
+}
+
+.comentarios .tarjeta em {
+  font-style: italic;
+  color: #888;
+}
+
+/* Sección de Contacto */
+.contacto {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+}
+
+.contacto h1 {
+  text-align: center;
+}
+
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contacto label {
+  margin: 10px 0 5px;
+}
+
+.contacto input,
+.contacto textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contacto button {
+  width: 80%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contacto button:hover {
+  background-color: #0056b3;
+}
