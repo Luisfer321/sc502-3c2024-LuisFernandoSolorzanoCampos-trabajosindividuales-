@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Productos</title>
+    <!-- Enlace al archivo de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Administrador de Productos</h1>
+    
+    <form id="productoForm">
+        <input type="text" id="nombre" placeholder="Nombre del producto" required>
+        <input type="number" id="precio" placeholder="Precio" required>
+        <select id="categoria">
+            <option value="electronica">Electrónica</option>
+            <option value="ropa">Ropa</option>
+            <option value="alimentos">Alimentos</option>
+        </select>
+        <button type="button" onclick="agregarProducto()">Agregar Producto</button>
+    </form>
+
+    <h2>Productos:</h2>
+    <select id="filtroCategoria" onchange="filtrarPorCategoria()">
+        <option value="todos">Todos</option>
+        <option value="electronica">Electrónica</option>
+        <option value="ropa">Ropa</option>
+        <option value="alimentos">Alimentos</option>
+    </select>
+    <ul id="productosList"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
