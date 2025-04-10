@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Edad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ingrese su edad</h2>
+    <input type="number" id="edad" placeholder="Ingrese su edad" min="0">
+    <button id="verificar">Verificar</button>
+    <p id="resultado"></p>
+
+    <script>
+        document.getElementById("verificar").addEventListener('click',function verificarEdad() {
+            let edad = document.getElementById("edad").value;
+            let resultado = document.getElementById("resultado");
+            
+            if (edad >= 18) {
+                resultado.textContent = "Eres mayor de edad";
+                resultado.style.color = "green";
+            } else {
+                resultado.textContent = "Eres menor de edad";
+                resultado.style.color = "red";
+            }
+        });
+        
+    </script>
+</body>
+</html>
